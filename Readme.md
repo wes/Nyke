@@ -4,7 +4,6 @@ This stack is a boilerplate for a simple and fast API REST server with based rou
 
 - Bun
 - Typescript
-- Yarn
 - Express
 - File Based Router
 - Drizzle ORM w/ Migrations
@@ -12,16 +11,16 @@ This stack is a boilerplate for a simple and fast API REST server with based rou
 
 ### Dev Setup
 
-To get it going, install packages with yarn.  Other package managers probably work just fine too.
+To get it going, install packages with bun.  Other package managers probably work just fine too.
 
 ```
-yarn
+bun install
 ```
 
 Run dev server.
 
 ```
-yarn dev
+bun dev
 ```
 
 ## Database
@@ -44,7 +43,7 @@ The database schema is managed in the ./schema.ts file.  The schema docs here ht
 To migrate the schema changes you will want to generate a new migration by running:
 
 ```
-yarn generate
+bun generate
 ```
 
 This will generate a new file in the ./drizzle/ folder, then will manage the migrations are they are deployed.
